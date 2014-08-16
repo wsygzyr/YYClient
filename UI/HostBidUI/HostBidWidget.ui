@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HostBidWidget</class>
+ <widget class="QWidget" name="HostBidWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>266</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>594</width>
+     <height>266</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame{border-image: url(:/image/HostBidUI/bg_jingpai.png);}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="StartTimeBtn">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>173</y>
+      <width>95</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{border-image:url(:/image/HostBidUI/bt_done_hover.png);}
+QPushButton{border-image: url(:/image/HostBidUI/bt_done.png);}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="helpBtn">
+    <property name="geometry">
+     <rect>
+      <x>509</x>
+      <y>7</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{border-image:url(:/image/HostBidUI/bt_help_hover.png);}
+QPushButton{border-image: url(:/image/HostBidUI/bt_help.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="girlLb">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>0</y>
+      <width>205</width>
+      <height>266</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/image/HostBidUI/img_girl.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="talkLb">
+    <property name="geometry">
+     <rect>
+      <x>54</x>
+      <y>182</y>
+      <width>143</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/image/HostBidUI/img_talk.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="noticeLb">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>245</y>
+      <width>311</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12px &quot;宋体&quot;;
+color:#c37dc1</string>
+    </property>
+    <property name="text">
+     <string>提醒：竞拍时间太长会影响大家的积极性哦~</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="incomeLb">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>170</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: bold 12px &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;竞拍已进行 &lt;span style=&quot; color:#f2c608;&quot;&gt;00:00&lt;/span&gt; , 预计带来&lt;/p&gt;&lt;p  style=&quot;line-height:10px;&quot;&gt;收益 &lt;span style=&quot; color:#f2c608;&quot;&gt;0&lt;/span&gt; 斗歌豆&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="candidateLb">
+    <property name="geometry">
+     <rect>
+      <x>288</x>
+      <y>126</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255,255,255);
+font: 75 12px &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;已有 &lt;/span&gt;&lt;span style=&quot; font-family:微软雅黑; font-size:18px; color:#f6ee82;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-weight:400;&quot;&gt; 人出价，预计入围价 &lt;/span&gt;&lt;span style=&quot; font-weight:400; color:#f2c608;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-weight:400;&quot;&gt; 斗歌豆&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="songInfoLb">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>100</y>
+      <width>310</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#fd96fa
+</string>
+    </property>
+    <property name="text">
+     <string>歌曲 《songname》    斗歌人数：numPlayer人</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="douTitleLb">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>70</y>
+      <width>277</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/image/HostBidUI/title_1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="countDownWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>60</y>
+      <width>263</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="countDownTextLb">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>263</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostBidUI/daoji_text.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="countDownNumLb">
+     <property name="geometry">
+      <rect>
+       <x>223</x>
+       <y>3</y>
+       <width>21</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 26px &quot;微软雅黑&quot;;
+color:#00fff6</string>
+     </property>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="countDownBtn">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>173</y>
+      <width>95</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{border-image:url(:/image/HostBidUI/daoji_btn_hover.png);}
+QPushButton{border-image: url(:/image/HostBidUI/daoji_btn.png);
+color:#4e1f53;
+font:16px &quot;微软雅黑&quot;}
+
+</string>
+    </property>
+    <property name="text">
+     <string>           5</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="talkTextLb">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>200</y>
+      <width>127</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(255,255,255,0);
+color: white ;
+font:12px &quot;宋体&quot;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'宋体'; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;香喷喷的美妞甩卖啦，只要9块9！&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="openLinks">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minBtn">
+    <property name="geometry">
+     <rect>
+      <x>534</x>
+      <y>7</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{border-image: 
+url(:/image/HostBidUI/bt_min_hover.png);}
+QPushButton{border-image: url(:/image/HostBidUI/bt_min.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeBtn">
+    <property name="geometry">
+     <rect>
+      <x>559</x>
+      <y>7</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{border-image: url(:/image/HostBidUI/bt_close_hover.png);}
+QPushButton{border-image: url(:/image/HostBidUI/bt_close.png);}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HostInviteWidget</class>
+ <widget class="QWidget" name="HostInviteWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>266</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="HostInviteFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>594</width>
+     <height>266</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#HostInviteFrame
+{
+	border-image: url(:/image/HostInviteUI/bg.png);
+}
+</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>74</y>
+      <width>594</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="selectSongPage">
+     <property name="styleSheet">
+      <string notr="true">#selectSongPage
+{
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+     </property>
+     <widget class="QLabel" name="selectSongText">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>26</y>
+        <width>86</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/image/HostInviteUI/bj_select_song.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="searchLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>56</y>
+        <width>336</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+border-image: url(:/image/HostInviteUI/bj_gq.png);
+font: 14px &quot;宋体&quot;;
+color: rgb(255, 255, 255);
+}
+QToolTip{
+border-width: 0px;
+border-image: url(:/image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="searchIcon">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>56</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/image/HostInviteUI/bj_search.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="selectSongBtn">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>56</y>
+        <width>76</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:hover
+{
+border-image: url(:/image/HostInviteUI/flxg_hover.png);
+}
+QPushButton
+{
+	border-image: url(:/image/HostInviteUI/flxg.png);
+	color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>分类选歌</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerNumLb">
+      <property name="geometry">
+       <rect>
+        <x>162</x>
+        <y>88</y>
+        <width>304</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="selectSongNextBtn">
+      <property name="geometry">
+       <rect>
+        <x>473</x>
+        <y>141</y>
+        <width>106</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:hover
+{
+	border-image: url(:/image/HostInviteUI/bt_next_hover.png);
+}
+QPushButton
+{
+	border-image: url(:/image/HostInviteUI/bt_next.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="songListWidget">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>88</y>
+        <width>336</width>
+        <height>96</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{border: 1px solid #84188a;
+	font: 75 14px &quot;宋体&quot;;
+     border-radius: 1px;}
+QListWidget{background-color:#710c77 ;}
+QListWidget::item{
+height:32px;color:#ffffff;
+
+}
+QToolTip{
+border-width: 0px;
+border-image: url(:/image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;}
+QListWidget::item:hover  {
+    background-color: #8d1394
+}
+
+
+
+QScrollBar::handle:vertical{
+    background: #c244bc;
+    min-height: 4px;
+	width: 4px
+}
+QScrollBar::add-line:vertical{
+	border: 1px solid #6e0d6b;
+	background: #6e0d6b;
+	height: 20px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+
+QScrollBar:vertical  {
+	border-left:2px solid #6e0d6b;
+	border-right:2px solid #6e0d6b;
+	border-top:2px solid #6e0d6b;
+	border-bottom:2px solid #6e0d6b;
+	background-color:#6e0d6b;
+	width: 8px;
+	margin: 0 0 0 0;
+}
+
+QScrollBar::sub-line:vertical  {
+	border: 1px solid #6e0d6b;
+	background: #6e0d6b;
+	height: 20px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical
+{
+	background:transparent;
+}
+QScrollBar::sub-page:vertical
+{
+	background:transparent;
+}</string>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="setBidCountPage">
+     <property name="styleSheet">
+      <string notr="true">#setBidCountPage
+{
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+     </property>
+     <widget class="QLabel" name="setBidCountText">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>26</y>
+        <width>112</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/image/HostInviteUI/bj_set_dgd.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setBidCountNextBtn">
+      <property name="geometry">
+       <rect>
+        <x>473</x>
+        <y>141</y>
+        <width>106</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:hover
+{
+	border-image: url(:/image/HostInviteUI/bt_next_hover.png);
+}
+QPushButton
+{
+	border-image: url(:/image/HostInviteUI/bt_next.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>56</y>
+        <width>93</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;font style=&quot; font-size:14px; font-family: 微软雅黑;color:#ffffff; &quot;&gt;观众至少要出&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>284</x>
+        <y>56</y>
+        <width>270</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;font style=&quot; font-size:14px; font-family: 微软雅黑;color:#ffffff; &quot;&gt;斗歌豆，才能参与竞拍（1斗歌豆=0.1Y币）&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="beatLabel">
+      <property name="geometry">
+       <rect>
+        <x>218</x>
+        <y>56</y>
+        <width>28</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{border-image: url(:/image/HostInviteUI/img_beat.png);}
+QToolTip{
+border-width: 1px;
+border-image: url(://image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bidCountLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>146</x>
+        <y>56</y>
+        <width>72</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/image/HostInviteUI/bj_dgd.png);
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="plusBtn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>246</x>
+        <y>56</y>
+        <width>27</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	border-image: url(:/image/AudienceBidWidget/bt_jia.png);
+}
+
+QPushButton::hover
+{
+	border-image: url(:/image/AudienceBidWidget/bt_jia_hover.png);
+}
+
+QToolTip{
+border-width: 0px;
+border-image: url(:/image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="minusBtn">
+      <property name="geometry">
+       <rect>
+        <x>246</x>
+        <y>73</y>
+        <width>27</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	border-image: url(:/image/AudienceBidWidget/bt_jian.png);
+}
+
+QPushButton::hover
+{
+	border-image: url(:/image/AudienceBidWidget/bt_jian_hover.png);
+}
+
+QToolTip{
+border-width: 0px;
+border-image: url(:/image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="setRewardsPage">
+     <property name="styleSheet">
+      <string notr="true">#setRewardsPage
+{
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+     </property>
+     <widget class="QLabel" name="setRewardsText">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>26</y>
+        <width>350</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/image/HostInviteUI/bj_user_reward.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="joinBtn">
+      <property name="geometry">
+       <rect>
+        <x>473</x>
+        <y>141</y>
+        <width>106</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:hover
+{
+	border-image: url(:/image/HostInviteUI/bt_start_hover.png);
+}
+QPushButton
+{
+	border-image: url(:/image/HostInviteUI/bt_start.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="VRBtn0">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>56</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolTip{
+border-width: 1px;
+border-image: url(://image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="VRBtn1">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>56</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolTip{
+border-width: 1px;
+border-image: url(://image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="VRBtn2">
+      <property name="geometry">
+       <rect>
+        <x>238</x>
+        <y>56</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolTip{
+border-width: 1px;
+border-image: url(://image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="VRBtn3">
+      <property name="geometry">
+       <rect>
+        <x>306</x>
+        <y>56</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolTip{
+border-width: 1px;
+border-image: url(://image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="VRBtn4">
+      <property name="geometry">
+       <rect>
+        <x>374</x>
+        <y>56</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolTip{
+border-width: 1px;
+border-image: url(://image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="VRBtn5">
+      <property name="geometry">
+       <rect>
+        <x>442</x>
+        <y>56</y>
+        <width>48</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolTip{
+border-width: 1px;
+border-image: url(://image/ToastWidget/toast.png) 2 2 2 2 stretch stretch;
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="VRLb0">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>106</y>
+        <width>65</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12px &quot;宋体&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="VRLb1">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>106</y>
+        <width>65</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12px &quot;宋体&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="VRLb2">
+      <property name="geometry">
+       <rect>
+        <x>238</x>
+        <y>106</y>
+        <width>65</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12px &quot;宋体&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="VRLb3">
+      <property name="geometry">
+       <rect>
+        <x>306</x>
+        <y>106</y>
+        <width>65</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12px &quot;宋体&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="VRLb4">
+      <property name="geometry">
+       <rect>
+        <x>374</x>
+        <y>106</y>
+        <width>65</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12px &quot;宋体&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="VRLb5">
+      <property name="geometry">
+       <rect>
+        <x>442</x>
+        <y>106</y>
+        <width>65</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12px &quot;宋体&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EditBtnOfVR4">
+      <property name="geometry">
+       <rect>
+        <x>398</x>
+        <y>83</y>
+        <width>24</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/image/RewardEditWidget/bt_edit.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="EditBtnOfVR5">
+      <property name="geometry">
+       <rect>
+        <x>466</x>
+        <y>83</y>
+        <width>24</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/image/RewardEditWidget/bt_edit.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="InviteText">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>7</y>
+      <width>64</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#ffffff;&quot;&gt;发起斗歌&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="returnBtn">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>7</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/image/HostInviteUI/bt_back.png);
+}
+QPushButton::hover
+{
+	border-image: url(:/image/HostInviteUI/bt_back_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="helpBtn">
+    <property name="geometry">
+     <rect>
+      <x>509</x>
+      <y>7</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/image/HostInviteUI/bt_help.png);
+}
+QPushButton::hover
+{
+	border-image: url(:/image/HostInviteUI/bt_help_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minBtn">
+    <property name="geometry">
+     <rect>
+      <x>534</x>
+      <y>7</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{border-image: url(:/image/HostHomeUI/bt_min_hover.png);}
+QPushButton{border-image: url(:/image/HostHomeUI/bt_min.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeBtn">
+    <property name="geometry">
+     <rect>
+      <x>559</x>
+      <y>7</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{border-image: url(:/image/HostHomeUI/bt_close_hover.png);}
+QPushButton{border-image: url(:/image/HostHomeUI/bt_close.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="titleWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>35</y>
+      <width>594</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#titleWidget
+{
+	
+	border-image: url(:/image/HostInviteUI/bj_top.png);
+}</string>
+    </property>
+    <widget class="QLabel" name="selectSongTitleLbBj">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>5</y>
+       <width>124</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostInviteUI/bj_item_ok.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="arrows1">
+     <property name="geometry">
+      <rect>
+       <x>194</x>
+       <y>5</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostInviteUI/bj_next_ok.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="setBidCountTitleLbBj">
+     <property name="geometry">
+      <rect>
+       <x>234</x>
+       <y>5</y>
+       <width>124</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostInviteUI/bj_item.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="arrows2">
+     <property name="geometry">
+      <rect>
+       <x>358</x>
+       <y>5</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostInviteUI/bj_next.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="setRewardsTitleLbBj">
+     <property name="geometry">
+      <rect>
+       <x>398</x>
+       <y>5</y>
+       <width>124</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostInviteUI/bj_item.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="selectSongTitleNum">
+     <property name="geometry">
+      <rect>
+       <x>74</x>
+       <y>5</y>
+       <width>26</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostInviteUI/bj_01_ok.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="setBidCountTitleNum">
+     <property name="geometry">
+      <rect>
+       <x>238</x>
+       <y>5</y>
+       <width>26</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostInviteUI/bj_02.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="setRewardsTitleNum">
+     <property name="geometry">
+      <rect>
+       <x>402</x>
+       <y>5</y>
+       <width>26</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/HostInviteUI/bj_03.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="selectSongTitleLb">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>7</y>
+       <width>70</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;font style=&quot; font-size:14px; font-family: 微软雅黑; color:#ffff00;&quot;&gt;选择歌曲&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="setBidCountTitleLb">
+     <property name="geometry">
+      <rect>
+       <x>264</x>
+       <y>7</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;font style=&quot; font-size:14px; font-family: 微软雅黑;color:#e5b5ec;&quot;&gt;设置竞拍底价&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="setRewardsTitleLb">
+     <property name="geometry">
+      <rect>
+       <x>428</x>
+       <y>7</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;font style=&quot; font-size:14px; font-family: 微软雅黑;color:#e5b5ec; &quot;&gt;设置用户奖励&lt;/font&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>2</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>2</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

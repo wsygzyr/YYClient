@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PKRoomWidget</class>
+ <widget class="QWidget" name="PKRoomWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>265</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>596</width>
+     <height>268</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame{background-image: url(:/image/PKRoomUI/bg.png);}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="messageWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>183</y>
+      <width>173</width>
+      <height>83</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="scoreWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>124</y>
+      <width>101</width>
+      <height>52</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="propWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>98</y>
+      <width>85</width>
+      <height>173</height>
+     </rect>
+    </property>
+    <zorder>pkplayerlistwidget</zorder>
+   </widget>
+   <widget class="QWidget" name="playerListWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>146</x>
+      <y>4</y>
+      <width>444</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="lyricWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>184</x>
+      <y>190</y>
+      <width>280</width>
+      <height>60</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>155</x>
+      <y>4</y>
+      <width>444</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar::chunk {
+            background-color: #0084e6;
+           };
+QProgressBar{
+          border-radius: 2px;
+          background: rgba(255,255,255,0);
+          };</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="format">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="hostInfoWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>3</y>
+      <width>138</width>
+      <height>59</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="peopleAnimeWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>50</y>
+      <width>400</width>
+      <height>197</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="SpecialLable">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>36</y>
+      <width>312</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12px &quot;宋体&quot;;
+background-image: url(:/image/PKRoomUI/kuang.png);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#fff000;&quot;&gt;小雨滴&lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;即将开始演唱第一段，请准备&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="songInfoDisplayWidgetBJ">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>158</y>
+      <width>173</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/image/PKRoomUI/song_box.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="songInfoDisplayWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>158</y>
+      <width>146</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="pkplayerlistwidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>118</x>
+      <y>19</y>
+      <width>358</width>
+      <height>229</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>peopleAnimeWidget</zorder>
+   <zorder>playerListWidget</zorder>
+   <zorder>messageWidget</zorder>
+   <zorder>scoreWidget</zorder>
+   <zorder>hostInfoWidget</zorder>
+   <zorder>lyricWidget</zorder>
+   <zorder>progressBar</zorder>
+   <zorder>propWidget</zorder>
+   <zorder>SpecialLable</zorder>
+   <zorder>songInfoDisplayWidgetBJ</zorder>
+   <zorder>songInfoDisplayWidget</zorder>
+   <zorder>pkplayerlistwidget</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

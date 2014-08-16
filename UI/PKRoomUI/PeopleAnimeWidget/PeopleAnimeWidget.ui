@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PeopleAnimeWidget</class>
+ <widget class="QWidget" name="PeopleAnimeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>197</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="GirlPicLabel">
+   <property name="geometry">
+    <rect>
+     <x>-40</x>
+     <y>-10</y>
+     <width>210</width>
+     <height>210</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border-image: url(:/image/PKRoomUI/person01.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AnimeTipLabel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>121</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-left-width: 9px; 
+border-right-width:2px;
+border-bottom-width:2px;
+border-top-width:2px;
+border-image: url(:/image/PKRoomUI/bg_talk.png) 3 3 3 10 stretch stretch;
+font: 14px &quot;微软雅黑&quot; ;
+color:white</string>
+   </property>
+   <property name="text">
+    <string>使用幸运之翼，分数蹭蹭看涨！</string>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="countDownLabel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>110</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

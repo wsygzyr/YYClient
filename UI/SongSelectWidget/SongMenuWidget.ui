@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SongMenuWidget</class>
+ <widget class="QWidget" name="SongMenuWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>266</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>SongMenuWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLineEdit" name="lineEdit_search">
+   <property name="geometry">
+    <rect>
+     <x>375</x>
+     <y>16</y>
+     <width>141</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0,0,0,0);
+border-width:0;
+border-style:outset
+
+</string>
+   </property>
+   <property name="cursorPosition">
+    <number>0</number>
+   </property>
+   <property name="placeholderText">
+    <string>请输入歌曲或歌手名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_search">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>16</y>
+     <width>36</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: rgba(0,0,0,0);
+border-width:0;
+border-style:outset;
+image: url(:/image/SongSelectUI/search.png);
+}
+QPushButton::hover
+{
+image: url(:/image/SongSelectUI/searchhover.png);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>36</width>
+     <height>36</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_search_bj">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>16</y>
+     <width>186</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/image/SongSelectUI/sousuobg.png);
+background-color: rgba(0,0,0,0);
+border-width:0;
+border-style:outset</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>543</x>
+     <y>14</y>
+     <width>36</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/image/SongSelectUI/guanbi.png);
+background-color: rgba(0,0,0,0);
+border-width:0;
+border-style:outset</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/guanbi.png</normaloff>:/images/guanbi.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>36</width>
+     <height>36</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_recommend">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>20</y>
+     <width>84</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/image/SongSelectUI/navhover.png);
+background-color: rgba(0,0,0,0);
+border-width:0;
+border-style:outset</string>
+   </property>
+   <property name="text">
+    <string>推荐</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resource/Res.qrc">
+     <normaloff>:/image/SongSelectUI/tuijian.png</normaloff>:/image/SongSelectUI/tuijian.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_singer">
+   <property name="geometry">
+    <rect>
+     <x>119</x>
+     <y>20</y>
+     <width>84</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/image/SongSelectUI/nav.png);
+background-color: rgba(0,0,0,0);
+border-width:0;
+border-style:outset</string>
+   </property>
+   <property name="text">
+    <string>歌手</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resource/Res.qrc">
+     <normaloff>:/image/SongSelectUI/geshou.png</normaloff>:/image/SongSelectUI/geshou.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_letterIndex" native="true">
+   <property name="geometry">
+    <rect>
+     <x>139</x>
+     <y>66</y>
+     <width>431</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget_letterIndex{border-image: url(:/image/SongSelectUI/zmbg1.png);}</string>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>1</number>
+     </property>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_main">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>594</width>
+     <height>266</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame_main{border-image: url(:/image/SongSelectUI/bg.png);}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget_left">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>54</y>
+      <width>119</width>
+      <height>193</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgba(0,0,0,0);
+border-width:0;
+border-style:outset;
+</string>
+    </property>
+    <widget class="QWidget" name="page_recommend"/>
+    <widget class="QWidget" name="page_singer">
+     <widget class="QPushButton" name="pushButton_manSinger">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>98</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/image/SongSelectUI/bthover.png);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>男歌手</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_womanSinger">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>58</y>
+        <width>98</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/image/SongSelectUI/bt.png);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>女歌手</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_singerGroup">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>106</y>
+        <width>98</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/image/SongSelectUI/bt.png);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>组合</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_foreignSinger">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>154</y>
+        <width>98</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/image/SongSelectUI/bt.png);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>国外</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget_right">
+    <property name="geometry">
+     <rect>
+      <x>133</x>
+      <y>57</y>
+      <width>441</width>
+      <height>187</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_recommendResult">
+     <property name="styleSheet">
+      <string notr="true">#page_recommendResult{
+border-image: url(:/image/SongSelectUI/bg2.png);
+}</string>
+     </property>
+     <widget class="QListWidget" name="listWidget_recommendResult">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>46</y>
+        <width>431</width>
+        <height>138</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QListWidget
+{
+	background-color: rgb(61, 0, 80);
+	border-width:0; 
+	border-style:outset; 
+}
+
+QScrollBar::sub-page:vertical{
+	background-color: rgb(54, 0, 57);
+}
+
+QScrollBar::add-page:vertical{
+	background-color: rgb(54, 0, 57);
+}
+
+QScrollBar:vertical {
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+	border-right:2px solid #763575;
+	border-left:2px solid #763575;
+	border-bottom:1px solid #763575;
+}
+
+QScrollBar::handle:vertical {
+    min-height: 14px;
+	border-image: url(:/image/SongSelectUI/gdt.png);
+}
+
+QScrollBar::sub-line:vertical {
+    height: 16px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+	border-image: url(:/image/SongSelectUI/gdtT.png);
+	border-right:1px solid #763575;
+	border-left:1px solid #763575;
+	border-top:1px solid #763575;
+	border-bottom:1px solid #763575;
+}
+QScrollBar::add-line:vertical {
+    height: 16px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+	border-image: url(:/image/SongSelectUI/gdtB.png);
+	border-right:1px solid #763575;
+	border-left:1px solid #763575;
+	border-top:1px solid #763575;
+}</string>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="autoScroll">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_singerResult">
+     <property name="styleSheet">
+      <string notr="true">#page_singerResult{
+border-image: url(:/image/SongSelectUI/bg2.png);
+}</string>
+     </property>
+     <widget class="QListWidget" name="listWidget_singerResult">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>46</y>
+        <width>431</width>
+        <height>138</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget
+{
+	background-color: rgb(61, 0, 80);
+	border-width:0; 
+	border-style:outset; 
+}
+
+QScrollBar::sub-page:vertical{
+	background-color: rgb(54, 0, 57);
+}
+
+QScrollBar::add-page:vertical{
+	background-color: rgb(54, 0, 57);
+}
+
+QScrollBar:vertical {
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+	border-right:2px solid #763575;
+	border-left:2px solid #763575;
+	border-bottom:1px solid #763575;
+}
+
+QScrollBar::handle:vertical {
+    min-height: 14px;
+	border-image: url(:/image/SongSelectUI/gdt.png);
+}
+
+QScrollBar::sub-line:vertical {
+    height: 16px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+	border-image: url(:/image/SongSelectUI/gdtT.png);
+	border-right:1px solid #763575;
+	border-left:1px solid #763575;
+	border-top:1px solid #763575;
+	border-bottom:1px solid #763575;
+}
+QScrollBar::add-line:vertical {
+    height: 16px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+	border-image: url(:/image/SongSelectUI/gdtB.png);
+	border-right:1px solid #763575;
+	border-left:1px solid #763575;
+	border-top:1px solid #763575;
+}</string>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_singerAllSong" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>57</y>
+     <width>555</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget_singerAllSong{background-color: rgb(101, 0, 133);}
+</string>
+   </property>
+   <widget class="QListWidget" name="listWidget_singerAllSong">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>40</y>
+      <width>545</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QListWidget
+{
+	background-color: rgb(61, 0, 80);
+	border-width:0; 
+	border-style:outset; 
+}
+
+QScrollBar::sub-page:vertical{
+	background-color: rgb(54, 0, 57);
+}
+
+QScrollBar::add-page:vertical{
+	background-color: rgb(54, 0, 57);
+}
+
+QScrollBar:vertical {
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+	border-right:2px solid #763575;
+	border-left:2px solid #763575;
+	border-bottom:1px solid #763575;
+}
+
+QScrollBar::handle:vertical {
+    min-height: 14px;
+	border-image: url(:/image/SongSelectUI/gdt.png);
+}
+
+QScrollBar::sub-line:vertical {
+    height: 16px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+	border-image: url(:/image/SongSelectUI/gdtT.png);
+	border-right:1px solid #763575;
+	border-left:1px solid #763575;
+	border-top:1px solid #763575;
+	border-bottom:1px solid #763575;
+}
+QScrollBar::add-line:vertical {
+    height: 16px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+	border-image: url(:/image/SongSelectUI/gdtB.png);
+	border-right:1px solid #763575;
+	border-left:1px solid #763575;
+	border-top:1px solid #763575;
+}</string>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_showSingerSongCount">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>6</y>
+      <width>511</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_showSingerSongCount_bj">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>6</y>
+      <width>544</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_showSingerSongCount_bj{
+	border-image: url(:/image/SongSelectUI/zmbg2.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_cacheing" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>62</y>
+     <width>447</width>
+     <height>183</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_loading">
+    <property name="geometry">
+     <rect>
+      <x>263</x>
+      <y>86</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_retry">
+    <property name="geometry">
+     <rect>
+      <x>334</x>
+      <y>82</y>
+      <width>35</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0,0,0,0);
+border-width:0;
+border-style:outset;
+color: rgb(205, 50, 227);
+font: 10pt &quot;Arial&quot;;
+text-decoration: underline;</string>
+    </property>
+    <property name="text">
+     <string>重试</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_hint">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>82</y>
+      <width>160</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(167, 74, 178);
+font: 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>连接不到网络,请检查网络后</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_DataIsEmpty">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>88</y>
+      <width>99</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(167, 74, 178);
+font: 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>该栏目数据为空</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame_main</zorder>
+  <zorder>label_search_bj</zorder>
+  <zorder>lineEdit_search</zorder>
+  <zorder>pushButton_recommend</zorder>
+  <zorder>pushButton_singer</zorder>
+  <zorder>pushButton_search</zorder>
+  <zorder>widget_letterIndex</zorder>
+  <zorder>widget_singerAllSong</zorder>
+  <zorder>pushButton_close</zorder>
+  <zorder>widget_cacheing</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>pushButton_recommend</tabstop>
+  <tabstop>pushButton_singer</tabstop>
+  <tabstop>lineEdit_search</tabstop>
+  <tabstop>pushButton_search</tabstop>
+  <tabstop>listWidget_singerAllSong</tabstop>
+  <tabstop>listWidget_recommendResult</tabstop>
+  <tabstop>pushButton_close</tabstop>
+  <tabstop>pushButton_womanSinger</tabstop>
+  <tabstop>pushButton_singerGroup</tabstop>
+  <tabstop>pushButton_foreignSinger</tabstop>
+  <tabstop>pushButton_manSinger</tabstop>
+  <tabstop>listWidget_singerResult</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../resource/Res.qrc"/>
+ </resources>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>2</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>2</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

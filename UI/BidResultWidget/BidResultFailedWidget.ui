@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BidResultFailedWidget</class>
+ <widget class="QWidget" name="BidResultFailedWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>266</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="BidResultFailedFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>594</width>
+     <height>266</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#BidResultFailedFrame{border-image: url(:/image/BidResultFailedWidget/bg_starterror.png);}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="QuitBtn">
+    <property name="geometry">
+     <rect>
+      <x>332</x>
+      <y>198</y>
+      <width>123</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{border-image: url(:/image/BidResultFailedWidget/bt_off_hover.png);}
+QPushButton{border-image: url(:/image/BidResultFailedWidget/bt_off.png);}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExceptionWidget</class>
+ <widget class="QWidget" name="ExceptionWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>266</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgba(255, 255, 255, 102);</string>
+  </property>
+  <widget class="QWidget" name="ExceptionShowWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>143</x>
+     <y>54</y>
+     <width>308</width>
+     <height>158</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#ExceptionShowWidget
+{
+	border-image: url(:/image/ExceptionWidget/bg_error.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="knowButton">
+    <property name="geometry">
+     <rect>
+      <x>107</x>
+      <y>101</y>
+      <width>91</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	
+	
+	border-image: url(:/image/ExceptionWidget/bt_off.png);
+}
+QPushButton::hover
+{
+	
+	
+	border-image: url(:/image/ExceptionWidget/bt_off_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="leaveButton">
+    <property name="geometry">
+     <rect>
+      <x>107</x>
+      <y>101</y>
+      <width>111</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/image/ExceptionWidget/bt_quit.png);
+}
+QPushButton::hover
+{
+	border-image: url(:/image/ExceptionWidget/bt_quit_hover.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="errorLabel">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>67</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>出错了</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

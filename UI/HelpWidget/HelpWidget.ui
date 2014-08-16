@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpWidget</class>
+ <widget class="QWidget" name="HelpWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>355</width>
+    <height>225</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="closeBtn">
+   <property name="geometry">
+    <rect>
+     <x>327</x>
+     <y>9</y>
+     <width>19</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover{border-image:url(:/image/HelpWidget/bt_close_hover.png);}
+QPushButton{border-image: url(:/image/HelpWidget/bt_close.png);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>40</y>
+     <width>325</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::NoContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollBar::handle:vertical  {
+background: #c026bd;
+min-height: 0px;
+}
+QScrollBar:vertical  {
+
+background-color:transparent;
+width: 10px;
+  margin: 0 0 0 0;
+}
+
+QTextEdit{
+background:rgba(255,255,255,0);
+color:white;
+border:0px solid #c220be
+}
+ QScrollBar::sub-line:vertical  {
+border: 5px solid transparent;
+background: #6e096a;
+height: 20px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical
+{
+background:#6e096a;
+}
+QScrollBar::sub-page:vertical
+{
+background:#6e096a;
+}</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:20px;&quot;&gt;《爱吼斗歌》是基于YY直播秀的一个音乐PK类小游戏。观众们可以和主播一起唱歌PK，由于演唱的人数有限，所以通过竞价来确定谁来唱；唱歌时有系统打分，并且可以使用道具来加分和捣乱，PK获胜更可以要求主播表演一个节目作为奖励。&lt;br /&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;一场斗歌PK的流程如下： &lt;/span&gt;&lt;br /&gt;1 主播发起游戏&lt;br /&gt;游戏由主播发起，主播设定好PK歌曲，斗歌资格竞拍的底价及观众赢得游戏的奖励后即可发起游戏；&lt;br /&gt;2 观众收到游戏邀请 &lt;br /&gt;主播发起后，在频道内的所有观众会收到游戏的邀请弹窗；&lt;br /&gt;3 斗歌PK资格竞拍 &lt;br /&gt;观众接受邀请后，即可参与斗歌资格的竞拍，通过出价的高低决定谁可以和主播一起斗歌PK，当主播觉得观众的出价差不多的时候就可以结束竞拍，紧张刺激的斗歌PK就要开始了；&lt;br /&gt;4 斗歌PK &lt;br /&gt;斗歌开始后，主播将第一位演唱，接下来竞价的入围者会依次演唱，演唱中玩家可以使用增益道具使自己的得分更高，没有入围的观众也可以使用捣乱类道具给主播的演唱带来混乱，我们的目标是让主播输，这样就可以看主播表演节目啦~ &lt;br /&gt;5 斗歌结束，主播表演相应节目 &lt;br /&gt;在斗歌PK中，最终得分最高的玩家将获得胜利，可以指定一个节目让主播表演。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="acceptRichText">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

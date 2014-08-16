@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FeedBackWidget</class>
+ <widget class="QWidget" name="FeedBackWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>317</width>
+    <height>202</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#FeedBackWidget{border-image: url(:/image/FeedBackWidget/bg_advice.png);}</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>317</width>
+     <height>202</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#stacedWidget{background-color:rgba(255,255,255,0);}</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="EditPage">
+    <widget class="QPushButton" name="editPgDoneBtn">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>152</y>
+       <width>73</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton::hover{border-image: url(:/image/FeedBackWidget/bt_done_hover.png);}
+QPushButton{border-image: url(:/image/FeedBackWidget/bt_done.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="editPgCloseBtn">
+     <property name="geometry">
+      <rect>
+       <x>287</x>
+       <y>10</y>
+       <width>19</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton::hover{border-image: url(:/image/FeedBackWidget/bt_close_hover.png);}
+QPushButton{border-image: url(:/image/FeedBackWidget/bt_close.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="editPgTextLb">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>24</y>
+       <width>211</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;font:14px &quot;宋体&quot;</string>
+     </property>
+     <property name="text">
+      <string>您的意见或建议对我们很重要哦~</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="ConfirmPage">
+    <widget class="QPushButton" name="confirmPgCloseBtn">
+     <property name="geometry">
+      <rect>
+       <x>287</x>
+       <y>10</y>
+       <width>19</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton::hover{border-image: url(:/image/FeedBackWidget/bt_close_hover.png);}
+QPushButton{border-image: url(:/image/FeedBackWidget/bt_close.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="confirmPgDoneBtn">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>152</y>
+       <width>73</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton::hover{border-image: url(:/image/FeedBackWidget/bt_done_hover.png);}
+QPushButton{border-image: url(:/image/FeedBackWidget/bt_done.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="confirmPgAdviceBtn">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>152</y>
+       <width>73</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton::hover{border-image: url(:/image/FeedBackWidget/bt_advice_hover.png);}
+QPushButton{border-image: url(:/image/FeedBackWidget/bt_advice.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="confirmPgImgLb">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>63</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/image/FeedBackWidget/img_smile.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="confirmPgTextLb">
+     <property name="geometry">
+      <rect>
+       <x>79</x>
+       <y>77</y>
+       <width>231</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;font:14px &quot;宋体&quot;</string>
+     </property>
+     <property name="text">
+      <string>您的意见已收到，我们会尽快处理</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

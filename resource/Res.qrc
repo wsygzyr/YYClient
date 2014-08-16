@@ -1,0 +1,356 @@
+<RCC>
+    <qresource prefix="/config">
+        <file>config.json</file>
+        <file>image/ExceptionWidget/bt_off.png</file>
+        <file>image/ExceptionWidget/bt_off_hover.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>image/AppIcon/icon_PK.ico</file>
+        <file>image/AudienceBidWidget/bg_custom_jingpai.png</file>
+        <file>image/AudienceBidWidget/bg_ear.png</file>
+        <file>image/AudienceBidWidget/bg_number.png</file>
+        <file>image/AudienceBidWidget/bg_number_jia.png</file>
+        <file>image/AudienceBidWidget/bt_cancel.png</file>
+        <file>image/AudienceBidWidget/bt_cancel_hover.png</file>
+        <file>image/AudienceBidWidget/bt_chujia.png</file>
+        <file>image/AudienceBidWidget/bt_chujia_hover.png</file>
+        <file>image/AudienceBidWidget/bt_done.png</file>
+        <file>image/AudienceBidWidget/bt_done_hover.png</file>
+        <file>image/AudienceBidWidget/bt_help.png</file>
+        <file>image/AudienceBidWidget/bt_help_hover.png</file>
+        <file>image/AudienceBidWidget/bt_jia.png</file>
+        <file>image/AudienceBidWidget/bt_jia_disable.png</file>
+        <file>image/AudienceBidWidget/bt_jia_hover.png</file>
+        <file>image/AudienceBidWidget/bt_jiajia.png</file>
+        <file>image/AudienceBidWidget/bt_jiajia_hover.png</file>
+        <file>image/AudienceBidWidget/bt_jian.png</file>
+        <file>image/AudienceBidWidget/bt_jian_disable.png</file>
+        <file>image/AudienceBidWidget/bt_jian_hover.png</file>
+        <file>image/AudienceBidWidget/img_beat.png</file>
+        <file>image/AudienceBidWidget/img_girl.png</file>
+        <file>image/AudienceBidWidget/img_jiajia.png</file>
+        <file>image/AudienceBidWidget/img_talk.png</file>
+        <file>image/AudienceBidWidget/title_1.png</file>
+        <file>image/AudienceBidWidget/title_2.png</file>
+        <file>image/AudienceBidWidget/title_3.png</file>
+        <file>image/AudienceBidWidget/title_daoji.png</file>
+        <file>image/AudienceBidWidget/title_jiesuaning.png</file>
+        <file>image/AudienceErrorWidget/bg_error.png</file>
+        <file>image/AudienceErrorWidget/bt_quit.png</file>
+        <file>image/AudienceErrorWidget/bt_quit_hover.png</file>
+        <file>image/AudienceInvitePKWidget/bg_invite.png</file>
+        <file>image/AudienceInvitePKWidget/bt_close.png</file>
+        <file>image/AudienceInvitePKWidget/bt_close_hover.png</file>
+        <file>image/AudienceInvitePKWidget/bt_want.png</file>
+        <file>image/AudienceInvitePKWidget/bt_want_hover.png</file>
+        <file>image/AudienceInvitePKWidget/reward0.png</file>
+        <file>image/AudienceInvitePKWidget/reward1.png</file>
+        <file>image/AudienceInvitePKWidget/reward2.png</file>
+        <file>image/AudienceInvitePKWidget/reward3.png</file>
+        <file>image/AudienceInvitePKWidget/reward100.png</file>
+        <file>image/AudienceInvitePKWidget/reward101.png</file>
+        <file>image/BidResultFailedWidget/bg_starterror.png</file>
+        <file>image/BidResultFailedWidget/bt_off.png</file>
+        <file>image/BidResultFailedWidget/bt_off_hover.png</file>
+        <file>image/bidResultWidget/bg_loading.png</file>
+        <file>image/bidResultWidget/bt_close.png</file>
+        <file>image/bidResultWidget/bt_close_hover.png</file>
+        <file>image/bidResultWidget/bt_min.png</file>
+        <file>image/bidResultWidget/img_1.png</file>
+        <file>image/bidResultWidget/img_2.png</file>
+        <file>image/bidResultWidget/img_3.png</file>
+        <file>image/bidResultWidget/img_girl.png</file>
+        <file>image/bidResultWidget/img_talk.png</file>
+        <file>image/bidResultWidget/tipbg.png</file>
+        <file>image/ExceptionWidget/bg_error.png</file>
+        <file>image/ExceptionWidget/bt_off.png</file>
+        <file>image/ExceptionWidget/bt_off_hover.png</file>
+        <file>image/ExceptionWidget/bt_quit.png</file>
+        <file>image/ExceptionWidget/bt_quit_hover.png</file>
+        <file>image/FeedBackWidget/bg_advice.png</file>
+        <file>image/FeedBackWidget/bt_advice.png</file>
+        <file>image/FeedBackWidget/bt_advice_hover.png</file>
+        <file>image/FeedBackWidget/bt_close.png</file>
+        <file>image/FeedBackWidget/bt_close_hover.png</file>
+        <file>image/FeedBackWidget/bt_done.png</file>
+        <file>image/FeedBackWidget/bt_done_hover.png</file>
+        <file>image/FeedBackWidget/img_smile.png</file>
+        <file>image/HelpWidget/bg_about.png</file>
+        <file>image/HelpWidget/bt_close.png</file>
+        <file>image/HelpWidget/bt_close_hover.png</file>
+        <file>image/HostBidUI/bg_jingpai.png</file>
+        <file>image/HostBidUI/bt_close.png</file>
+        <file>image/HostBidUI/bt_close_hover.png</file>
+        <file>image/HostBidUI/bt_done.png</file>
+        <file>image/HostBidUI/bt_done_hover.png</file>
+        <file>image/HostBidUI/bt_help.png</file>
+        <file>image/HostBidUI/bt_help_hover.png</file>
+        <file>image/HostBidUI/bt_min.png</file>
+        <file>image/HostBidUI/bt_min_hover.png</file>
+        <file>image/HostBidUI/daoji_btn.png</file>
+        <file>image/HostBidUI/daoji_btn_hover.png</file>
+        <file>image/HostBidUI/daoji_text.png</file>
+        <file>image/HostBidUI/img_girl.png</file>
+        <file>image/HostBidUI/img_talk.png</file>
+        <file>image/HostBidUI/title_1.png</file>
+        <file>image/HostBidUI/title_2.png</file>
+        <file>image/HostBidUI/title_3.png</file>
+        <file>image/HostBidUI/title_jiesuaning.png</file>
+        <file>image/HostHomeUI/bg_home.png</file>
+        <file>image/HostHomeUI/bt_about.png</file>
+        <file>image/HostHomeUI/bt_close.png</file>
+        <file>image/HostHomeUI/bt_close_hover.png</file>
+        <file>image/HostHomeUI/bt_min.png</file>
+        <file>image/HostHomeUI/bt_min_hover.png</file>
+        <file>image/HostHomeUI/bt_start.png</file>
+        <file>image/HostHomeUI/bt_start_hover.png</file>
+        <file>image/HostHomeUI/bt_useradvice.png</file>
+        <file>image/HostHomeUI/bt_useradvice_hover.png</file>
+        <file>image/HostHomeUI/bz.png</file>
+        <file>image/HostHomeUI/bzhover.png</file>
+        <file>image/HostHomeUI/fhhover.png</file>
+        <file>image/HostHomeUI/icon_zuan.png</file>
+        <file>image/HostHomeUI/img_banner.png</file>
+        <file>image/HostInviteUI/1.png</file>
+        <file>image/HostInviteUI/2.png</file>
+        <file>image/HostInviteUI/3.png</file>
+        <file>image/HostInviteUI/add.png</file>
+        <file>image/HostInviteUI/bg.png</file>
+        <file>image/HostInviteUI/bg_jingpai.png</file>
+        <file>image/HostInviteUI/bt_back.png</file>
+        <file>image/HostInviteUI/bt_back_hover.png</file>
+        <file>image/HostInviteUI/bt_help.png</file>
+        <file>image/HostInviteUI/bt_help_hover.png</file>
+        <file>image/HostInviteUI/btn_start.png</file>
+        <file>image/HostInviteUI/btn_start_hover.png</file>
+        <file>image/HostInviteUI/gd.png</file>
+        <file>image/HostInviteUI/gdhover.png</file>
+        <file>image/HostInviteUI/img_beat.png</file>
+        <file>image/HostInviteUI/reward0.png</file>
+        <file>image/HostInviteUI/reward1.png</file>
+        <file>image/HostInviteUI/reward2.png</file>
+        <file>image/HostInviteUI/reward3.png</file>
+        <file>image/HostInviteUI/reward100.png</file>
+        <file>image/HostInviteUI/reward101.png</file>
+        <file>image/HostInviteUI/reward10000.png</file>
+        <file>image/HostInviteUI/search.png</file>
+        <file>image/PKResultUI/bg_gameover.png</file>
+        <file>image/PKResultUI/bg_window.png</file>
+        <file>image/PKResultUI/bg_window_a.png</file>
+        <file>image/PKResultUI/bt_close.png</file>
+        <file>image/PKResultUI/bt_close_hover.png</file>
+        <file>image/PKResultUI/bt_end01.png</file>
+        <file>image/PKResultUI/bt_end01_hover.png</file>
+        <file>image/PKResultUI/bt_guanbi.png</file>
+        <file>image/PKResultUI/bt_guanbi_hover.png</file>
+        <file>image/PKResultUI/bt_likai.png</file>
+        <file>image/PKResultUI/bt_likai_hover.png</file>
+        <file>image/PKResultUI/bt_min.png</file>
+        <file>image/PKResultUI/bt_min_hover.png</file>
+        <file>image/PKResultUI/bt_qubiaoyan.png</file>
+        <file>image/PKResultUI/bt_qubiaoyan_hover.png</file>
+        <file>image/PKResultUI/bt_useradvice.png</file>
+        <file>image/PKResultUI/bt_useradvice_hover.png</file>
+        <file>image/PKResultUI/bt_weiguan.png</file>
+        <file>image/PKResultUI/bt_weiguan_hover.png</file>
+        <file>image/PKResultUI/bt_zuodeng.png</file>
+        <file>image/PKResultUI/bt_zuodeng_hover.png</file>
+        <file>image/PKResultUI/icon_bei.png</file>
+        <file>image/PKResultUI/icon_gas.png</file>
+        <file>image/PKResultUI/icon_jiangbei.png</file>
+        <file>image/PKResultUI/img_1.png</file>
+        <file>image/PKResultUI/img_2.png</file>
+        <file>image/PKResultUI/img_3.png</file>
+        <file>image/PKResultUI/img_4.png</file>
+        <file>image/PKResultUI/img_blight.png</file>
+        <file>image/PKResultUI/img_HostRewardDefault.png</file>
+        <file>image/PKResultUI/img_jqqd.png</file>
+        <file>image/PKResultUI/img_reword00.png</file>
+        <file>image/PKResultUI/img_reword00_big.png</file>
+        <file>image/PKResultUI/img_reword00_hover.png</file>
+        <file>image/PKResultUI/img_reword01.png</file>
+        <file>image/PKResultUI/img_reword01_big.png</file>
+        <file>image/PKResultUI/img_reword01_hover.png</file>
+        <file>image/PKResultUI/img_reword02.png</file>
+        <file>image/PKResultUI/img_reword02_big.png</file>
+        <file>image/PKResultUI/img_reword02_hover.png</file>
+        <file>image/PKResultUI/img_reword03.png</file>
+        <file>image/PKResultUI/img_reword03_big.png</file>
+        <file>image/PKResultUI/img_reword03_hover.png</file>
+        <file>image/PKResultUI/img_reword0100.png</file>
+        <file>image/PKResultUI/img_reword0100_big.png</file>
+        <file>image/PKResultUI/img_reword0100_hover.png</file>
+        <file>image/PKResultUI/img_reword0101.png</file>
+        <file>image/PKResultUI/img_reword0101_big.png</file>
+        <file>image/PKResultUI/img_reword0101_hover.png</file>
+        <file>image/PKResultUI/img_win.png</file>
+        <file>image/PKRoomUI/0.png</file>
+        <file>image/PKRoomUI/1.png</file>
+        <file>image/PKRoomUI/2.png</file>
+        <file>image/PKRoomUI/3.png</file>
+        <file>image/PKRoomUI/4.png</file>
+        <file>image/PKRoomUI/5.png</file>
+        <file>image/PKRoomUI/6.png</file>
+        <file>image/PKRoomUI/7.png</file>
+        <file>image/PKRoomUI/8.png</file>
+        <file>image/PKRoomUI/9.png</file>
+        <file>image/PKRoomUI/7000.png</file>
+        <file>image/PKRoomUI/7001.png</file>
+        <file>image/PKRoomUI/7001_hover.png</file>
+        <file>image/PKRoomUI/7001_pressed.png</file>
+        <file>image/PKRoomUI/7001_used.png</file>
+        <file>image/PKRoomUI/7010.png</file>
+        <file>image/PKRoomUI/7010_hover.png</file>
+        <file>image/PKRoomUI/7010_msg.png</file>
+        <file>image/PKRoomUI/7010_pressed.png</file>
+        <file>image/PKRoomUI/7011.png</file>
+        <file>image/PKRoomUI/7011_hover.png</file>
+        <file>image/PKRoomUI/7011_msg.png</file>
+        <file>image/PKRoomUI/7011_pressed.png</file>
+        <file>image/PKRoomUI/7020.png</file>
+        <file>image/PKRoomUI/7020_hover.png</file>
+        <file>image/PKRoomUI/7020_msg.png</file>
+        <file>image/PKRoomUI/7020_pressed.png</file>
+        <file>image/PKRoomUI/7021.png</file>
+        <file>image/PKRoomUI/7021_hover.png</file>
+        <file>image/PKRoomUI/7021_msg.png</file>
+        <file>image/PKRoomUI/7021_pressed.png</file>
+        <file>image/PKRoomUI/7030.png</file>
+        <file>image/PKRoomUI/7030_hover.png</file>
+        <file>image/PKRoomUI/7030_msg.png</file>
+        <file>image/PKRoomUI/7030_pressed.png</file>
+        <file>image/PKRoomUI/7031.png</file>
+        <file>image/PKRoomUI/7031_hover.png</file>
+        <file>image/PKRoomUI/7031_msg.png</file>
+        <file>image/PKRoomUI/7031_pressed.png</file>
+        <file>image/PKRoomUI/7040.png</file>
+        <file>image/PKRoomUI/bg.png</file>
+        <file>image/PKRoomUI/bg_bnt.png</file>
+        <file>image/PKRoomUI/bg_home.png</file>
+        <file>image/PKRoomUI/bg_message.png</file>
+        <file>image/PKRoomUI/bg_talk.png</file>
+        <file>image/PKRoomUI/bidresult5.png</file>
+        <file>image/PKRoomUI/bidresult6.png</file>
+        <file>image/PKRoomUI/bidresult7.png</file>
+        <file>image/PKRoomUI/bidresult8.png</file>
+        <file>image/PKRoomUI/countDown_1.png</file>
+        <file>image/PKRoomUI/countDown_2.png</file>
+        <file>image/PKRoomUI/countDown_3.png</file>
+        <file>image/PKRoomUI/countDown_go.png</file>
+        <file>image/PKRoomUI/countDown_ready.png</file>
+        <file>image/PKRoomUI/gif_music.gif</file>
+        <file>image/PKRoomUI/headLoc.png</file>
+        <file>image/PKRoomUI/img_bangdan.png</file>
+        <file>image/PKRoomUI/kuang.png</file>
+        <file>image/PKRoomUI/MiddleLoc.png</file>
+        <file>image/PKRoomUI/person01.png</file>
+        <file>image/PKRoomUI/say01.png</file>
+        <file>image/PKRoomUI/seq_1.png</file>
+        <file>image/PKRoomUI/seq_2.png</file>
+        <file>image/PKRoomUI/seq_3.png</file>
+        <file>image/PKRoomUI/seq_4.png</file>
+        <file>image/PKRoomUI/song_box.png</file>
+        <file>image/PKRoomUI/TailLoc.png</file>
+        <file>image/PKRoomUI/zaijia.png</file>
+        <file>image/resourceErrorWidget/bg_error2.png</file>
+        <file>image/resourceErrorWidget/bt_off.png</file>
+        <file>image/resourceErrorWidget/bt_off_hover.png</file>
+        <file>image/RewardEditWidget/bg_zidingyi.png</file>
+        <file>image/RewardEditWidget/bt_cancle.png</file>
+        <file>image/RewardEditWidget/bt_cancle_hover.png</file>
+        <file>image/RewardEditWidget/bt_delete.png</file>
+        <file>image/RewardEditWidget/bt_delete_hover.png</file>
+        <file>image/RewardEditWidget/bt_edit.png</file>
+        <file>image/RewardEditWidget/bt_save.png</file>
+        <file>image/RewardEditWidget/bt_save_hover.png</file>
+        <file>image/RewardEditWidget/reward100.png</file>
+        <file>image/SingChangeErrorWidget/bg_error.png</file>
+        <file>image/SingChangeErrorWidget/bt_know.png</file>
+        <file>image/SingChangeErrorWidget/bt_know_hover.png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (1).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (2).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (3).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (4).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (5).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (6).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (7).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (8).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (9).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (10).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (11).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (12).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (13).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (14).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (15).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (16).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (17).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (18).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (19).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (20).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (21).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (22).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (23).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (24).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (25).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (26).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (27).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (28).png</file>
+        <file>image/SongSelectUI/juhuazhuan/jz (29).png</file>
+        <file>image/SongSelectUI/bg.png</file>
+        <file>image/SongSelectUI/bg2.png</file>
+        <file>image/SongSelectUI/bt.png</file>
+        <file>image/SongSelectUI/bthover.png</file>
+        <file>image/SongSelectUI/dg.png</file>
+        <file>image/SongSelectUI/dghover.png</file>
+        <file>image/SongSelectUI/gdt.png</file>
+        <file>image/SongSelectUI/gdtB.png</file>
+        <file>image/SongSelectUI/gdtbg.png</file>
+        <file>image/SongSelectUI/gdtBhover.png</file>
+        <file>image/SongSelectUI/gdtT.png</file>
+        <file>image/SongSelectUI/gdtThover.png</file>
+        <file>image/SongSelectUI/geshou.png</file>
+        <file>image/SongSelectUI/guanbi.png</file>
+        <file>image/SongSelectUI/letterBj.png</file>
+        <file>image/SongSelectUI/listItemBj.png</file>
+        <file>image/SongSelectUI/nav.png</file>
+        <file>image/SongSelectUI/navhover.png</file>
+        <file>image/SongSelectUI/search.png</file>
+        <file>image/SongSelectUI/searchhover.png</file>
+        <file>image/SongSelectUI/sousuobg.png</file>
+        <file>image/SongSelectUI/tuijian.png</file>
+        <file>image/SongSelectUI/zmbg1.png</file>
+        <file>image/SongSelectUI/zmbg2.png</file>
+        <file>image/ToastWidget/toast.png</file>
+
+        <file>image/HostInviteUI/bj_01.png</file>
+        <file>image/HostInviteUI/bj_01_ok.png</file>
+        <file>image/HostInviteUI/bj_02.png</file>
+        <file>image/HostInviteUI/bj_02_ok.png</file>
+        <file>image/HostInviteUI/bj_03.png</file>
+        <file>image/HostInviteUI/bj_03_ok.png</file>
+        <file>image/HostInviteUI/bj_dgd.png</file>
+        <file>image/HostInviteUI/bj_gq.png</file>
+        <file>image/HostInviteUI/bj_item.png</file>
+        <file>image/HostInviteUI/bj_item_ok.png</file>
+        <file>image/HostInviteUI/bj_next.png</file>
+        <file>image/HostInviteUI/bj_next_ok.png</file>
+        <file>image/HostInviteUI/bj_search.png</file>
+        <file>image/HostInviteUI/bj_select_song.png</file>
+        <file>image/HostInviteUI/bj_set_dgd.png</file>
+        <file>image/HostInviteUI/bj_top.png</file>
+        <file>image/HostInviteUI/bj_user_reward.png</file>
+        <file>image/HostInviteUI/bt_next.png</file>
+        <file>image/HostInviteUI/bt_next_hover.png</file>
+        <file>image/HostInviteUI/bt_start.png</file>
+        <file>image/HostInviteUI/bt_start_hover.png</file>
+        <file>image/HostInviteUI/flxg.png</file>
+        <file>image/HostInviteUI/flxg_hover.png</file>
+
+        <file>image/SingChangeErrorWidget/bg_loading.png</file>
+        <file>image/bidResultWidget/loading.png</file>
+        <file>image/bidResultWidget/progress_bar_1.png</file>
+        <file>image/bidResultWidget/progress_bar_2.png</file>
+        <file>image/bidResultWidget/progress_bar_anniu.png</file>
+
+    </qresource>
+</RCC>

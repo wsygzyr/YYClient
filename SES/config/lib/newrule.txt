@@ -1,0 +1,71 @@
+[CONST]
+def FILPENALTY 10000
+[\CONST]
+
+[NETWORK]
+[NETWORK1]
+
+[LEVEL]
+level SENT WORD
+[\LEVEL]
+
+[SF]
+add_node start[0]
+add_node end[0]
+add_node sil[0]
+#add_node fil[0]
+add_arc start[0] sil[0]
+add_arc sil[0] end[0]  
+#add_arc start[0] fil[0] FILPENALTY
+#add_arc fil[0] end[0]
+add_arc start[0] end[0]
+#add_arc sil[0] fil[0] FILPENALTY
+#add_arc sil[0] sil[0]
+#add_arc fil[0] sil[0]
+#add_arc fil[0] fil[0] FILPENALTY
+
+#add_node fil[0]
+#
+#add_arc start[0] sil[0]
+#add_arc start[0] fil[0] FILPENALTY
+#add_arc sil[0] sil[0] FILPENALTY
+#add_arc sil[0] fil[0] FILPENALTY
+#add_arc sil[0] end[0]
+#add_arc fil[0] sil[0]
+#add_arc fil[0] fil[0] FILPENALTY
+#add_arc fil[0] end[0]
+[\SF]
+
+[SENT]
+add_node start[0]
+add_node end[0]
+
+def N [0 : SWCNT]
+add_node SF[N]
+undef N
+
+
+def N [0 : SWCNT - 1]
+add_node WORD[N]
+undef N
+
+add_arc start[0] SF[0]
+
+def N [0 : SWCNT - 1]
+add_arc SF[N] WORD[N]
+#貌似每次只能加一条弧
+#add_arc WORD[N] SF[N + 1]
+undef N
+
+
+def N [1 : SWCNT]
+add_arc WORD[N-1] SF[N]
+undef N
+
+add_arc SF[-1] end
+[\SENT]
+
+[\NETWORK1]
+
+[\NETWORK]
+

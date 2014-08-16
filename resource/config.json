@@ -1,0 +1,56 @@
+﻿{
+    "NodeServer":
+    {
+        "IP":"182.92.20.230",
+        "domain":"yy.ns.ihou.com",
+        "port":10001
+    },
+    "StatusServer":
+    {
+        "IP": "182.92.21.30",
+        "domain":"yy.ss.ihou.com",
+        "port":11001
+    },
+    "HTTP":
+    {
+        "InterfaceDomain":"http://yy.hs.ihou.com/",
+        "downloadprefix":"http://yy.rs.ihou.com/",
+        "songsearchprefix":"yy-http-interface/song/query?keyword=",
+        "mainpageprefix":"yy-http-interface/user/mainPage?hostUserID=",
+        "hotsonglistprefix":"yy-http-interface/song/hot",
+        "rewardlistprefix":"yy-http-interface/reward/query",
+        "feedbackprefix":"yy-http-interface/user/addFeedback?",
+        "uploadprefix":"yy-http-interface/user/uploadDumpFile",
+        "singerlistprefix":"yy-http-interface/song/getSingers",
+        "singersonglistprefix":"yy-http-interface/song/getSingerSongs?singerno=",
+        "proglistprefix":"yy-http-interface/song/getSongProgs",
+        "progsonglistprefix":"yy-http-interface/song/getProgSongs?progno=",
+        "songpathprefix":"yy-http-interface/song/getSong?songno=",
+        "downloadFileSavePath":"./download/"
+    },
+    "PropList":
+    [
+        {"ID":7000,"name":"斗歌豆","priceDesp":"斗歌豆(0.1Y币/100红钻)","funcDesp":"用来参与斗歌竞拍的神奇豆子","countdown":0,"isComplexAni":false,"loopCount":0},
+        {"ID":7001,"name":"幸运之翼","priceDesp":"幸运之翼(7.9Y币/7900红钻)","funcDesp":"幸运降临，演唱中每句的得分增加10%","countdown":0,"isComplexAni":false,"loopCount":0},
+        {"ID":7010,"name":"变形金刚","priceDesp":"变形金刚(4.9Y币/4900红钻)","funcDesp":"将演唱者声音变为变形金刚，效果刚刚的","countdown":10000,"isComplexAni":true,"loopCount":8},
+        {"ID":7011,"name":"汤姆猫","priceDesp":"汤姆猫(4.9Y币/4900红钻)","funcDesp":"将演唱者声音变为汤姆猫，萌的受不了","countdown":10000,"isComplexAni":true,"loopCount":9},
+        {"ID":7030,"name":"涂鸦","priceDesp":"涂鸦(1.9Y币/1900红钻)","funcDesp":"涂写“I LOVE YOU”并挡住歌词，勇敢示爱吧","countdown":1000,"isComplexAni":false,"loopCount":3},
+        {"ID":7021,"name":"亲亲","priceDesp":"强吻(1.9Y币/1900红钻)","funcDesp":"大嘴巴亲过去，制造较大混乱","countdown":1000,"isComplexAni":false,"loopCount":0},
+        {"ID":7020,"name":"猪头","priceDesp":"猪头(0.9Y币/900红钻)","funcDesp":"送出一个猪头制造混乱，伴随猪哼哼声音","countdown":1000,"isComplexAni":false,"loopCount":0},
+        {"ID":7031,"name":"青蛙","priceDesp":"青蛙(0.9Y币/900红钻)","funcDesp":"放出一只青蛙制造混乱，伴随呱呱叫声","countdown":1000,"isComplexAni":false,"loopCount":0},
+        {"ID":7040,"name":"一万块","priceDesp":"","funcDesp":"等张雷提供","countdown":0,"isComplexAni":false,"loopCount":0}
+    ],
+    "RewardList":
+    [
+        {"ID":0,"name":"主播秘密","desp":"主播讲一个自己的小秘密"},
+        {"ID":1,"name":"头砸桌子","desp":"主播以头砸桌子3次"},
+        {"ID":2,"name":"亲一个","desp":"主播对着镜头做亲吻动作，并说XXX我爱你"},
+        {"ID":3,"name":"卖萌连拍","desp":"主播连续做5个卖萌表情"},
+        {"ID":100,"name":"自定义","desp":"自定义一个你擅长的表演作为奖励"},
+        {"ID":101,"name":"自定义","desp":"自定义一个你擅长的表演作为奖励"}
+    ],
+    "Log":
+    {
+        "USE_DEBUG_PATH" : true
+    }
+}
